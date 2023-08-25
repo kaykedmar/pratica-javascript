@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratica 001</title>
+  <style>
+    body { 
+      width: 98vw;
+      height: 98vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .entrada { 
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      
+    }
+    
+    .css-verificar { 
+      cursor: pointer;
+      margin-top: 10px;
+      display: block;
+      padding: 10px;
+      background-color: blueviolet;
+      border: none;
+      border-radius: 7px;
+      color: gray;
+      transition: background-color 0.17s;
+      user-select: none;
+    }
+
+    .css-verificar:hover { 
+      background-color: rgb(99, 34, 160);
+    }
+
+    .css-nota { 
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      color: gray;
+    }
+
+    .titulo { 
+      color: gray;
+      font-size: 13px;
+      margin-bottom: 8px;
+      user-select: none;
+    }
+   
+    .css-resultado { 
+      color: rgb(209, 16, 16);
+      font-size: 14px;
+      margin-top: 5px;
+      user-select: none;
+    }
+
+    /* Remove a borda de focus do input */
+    input:focus { 
+      outline: none;
+    }
+ 
+
+  </style>
+</head>
+<body>
+
+<div class="entrada">
+  <label for="js-nota" class="titulo" >Insera uma Nota!</label>
+  <input type="text" id="js-nota" class="css-nota">
+  <button type="submit" id="js-verificar" class="css-verificar">Submit</button>
+  <p id="js-resultado" class="css-resultado"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
